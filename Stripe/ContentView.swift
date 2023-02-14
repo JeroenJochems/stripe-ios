@@ -6,17 +6,39 @@
 //
 
 import SwiftUI
+import StripeTerminal
+
 
 struct ContentView: View {
+    
+    @ObservedObject var stripe = Stripe.shared
+    
+    init() {
+        Terminal.setTokenProvider(APIClient.shared)
+    }
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            	
+            if stripe.connectedReader != nil {
+                Button("Pay 1000", action: stripe.pay)
+            } else {
+                
+                if stripe.readers.count == 0 {
+                    Button("Find readers", action: stripe.discoverReadersAction)
+                } else {
+                    ForEach(stripe.readers, id: \.self.serialNumber)  { reader in
+                        Button(reader.serialNumber) {
+                            stripe.connectToReader(reader)
+                        }
+                    }
+                }
+            }
         }
         .padding()
     }
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
