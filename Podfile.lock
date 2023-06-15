@@ -1,16 +1,16 @@
 PODS:
-  - StripeTerminal (3.0.0-b4)
+  - StripeTerminal (3.0.0-b7)
 
 DEPENDENCIES:
-  - StripeTerminal (from `https://stripe-terminal-beta-sdk.s3.amazonaws.com/ios/v3.0.0-b4-3a04af8dba55cf8cb18ec89ba2b64b3b84972828615b885229d4ffc7c4470afc.podspec`)
+  - StripeTerminal (from `https://stripe-terminal-beta-sdk.s3.amazonaws.com/ios/v3.0.0-b7-a908b1d232da93de7e3f106205e4331b3ac9847231e5a3161942f292d6683d54.podspec`)
 
 EXTERNAL SOURCES:
   StripeTerminal:
-    :podspec: https://stripe-terminal-beta-sdk.s3.amazonaws.com/ios/v3.0.0-b4-3a04af8dba55cf8cb18ec89ba2b64b3b84972828615b885229d4ffc7c4470afc.podspec
+    :podspec: https://stripe-terminal-beta-sdk.s3.amazonaws.com/ios/v3.0.0-b7-a908b1d232da93de7e3f106205e4331b3ac9847231e5a3161942f292d6683d54.podspec
 
 SPEC CHECKSUMS:
-  StripeTerminal: abcbd82f5a18af764aa692161021f1381fa35f2b
+  StripeTerminal: e6f7c9345c9efac177e9de31f1cb989fc500d2ad
 
-PODFILE CHECKSUM: 5d0dc5cf6abab1f613bdc8c4f8e08feacd7842b4
+PODFILE CHECKSUM: f7cc5d73cf29cbcebf76fbc6c8690b933ae239a2
 
 COCOAPODS: 1.11.3
